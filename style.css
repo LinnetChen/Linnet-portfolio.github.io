@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "微軟正黑體",sans-serif;
+    line-height: 1.7;
+    color:#432;
+}
+
+a{
+    text-decoration: none;
+    color:#432;
+}
+
+img{
+    max-width:100%;
+}
+
+.menu{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    font-size: 1.25rem;
+    margin: 1%;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.goback{
+    justify-content: flex-end;
+}
+
+a:hover{
+    color:rgb(255, 166, 0);
+}
+
+.aboutme-title{
+    text-align: center;
+}
+
+.aboutme-title2{
+    text-align: center;
+}
+
+table{
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.container p{
+    color:rgb(160, 160, 160);
+}
+
+.shape{
+    width: 150px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    color: #000;
+    background-color: transparent;
+    position: relative;
+    transition: all .3s linear;
+}
+.shape > p{
+    position: relative;
+    z-index: 1;
+}
+.shape::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .3s linear;
+}
+.shape::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all .3s linear;
+}
+.shape:hover::before,
+.shape:hover::after{
+    width: 100%;
+    height: 100%;
+}
+
